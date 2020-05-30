@@ -1,4 +1,5 @@
 import datetime
+import time
 
 def formatAnki(array):
     sigleRow=''
@@ -12,7 +13,12 @@ def writeToTxt(array):
     for item in array:
         text.append(formatAnki(item))
     now_time = datetime.datetime.now().strftime(' %m-%d-%H-%M-%S')
+    
+   
+
+
     fileName='card'+now_time+'.txt'
     with open(fileName,'w+',encoding='utf-8') as wholecard:
-        wholecard.writelines(text)   
+        wholecard.writelines(text)  
+
     

@@ -2,7 +2,7 @@ import getAudio
 
 
 def getPage(item):
-    contentList=item[0]['content']['phrases']
+    contentList=item['phrases']
     text=[]
     for content in contentList:
         singleRow=[j for j in range(7)]
